@@ -1,0 +1,375 @@
+@media (max-width: 1440px){
+	.center-tit{
+		left: 50%;
+	}
+	
+	.main-wrap-top p{
+		width: 90%;
+	}
+	
+	.main-content-wrap{
+		padding-top: 0;
+	}
+	
+	.content-fff{
+		width: 70%;
+	}
+	
+	.content-fff p{
+		margin: 2em auto 0;
+	}
+	
+	.main-content-wrap h3{
+		margin: .5em auto 0 !important;
+	}
+	
+	.sub-top-bg h1{
+		top: 90%
+	}
+	
+	.sub-container .info-sub-wrap p{
+		width: 75%
+	}
+	
+	.sub-container .main-wrap-top {
+    	padding: 17em 5em 0;
+	}
+}
+
+
+@media (max-width: 1024px){
+	
+	nav {
+   		 width: 75%;
+	}
+	
+	.center-tit {
+		left: 32%;
+	}
+	
+	.sub-container .main-wrap-top {
+		padding: 32em 5em 0;
+
+	}
+	.sub-top-bg h1 {
+		top: 92%;
+	}
+	
+	.sub-container .product-bg svg {
+		display: block;
+		margin: 0 auto;
+		width: 70%;
+	}
+	
+	.sub-container .notice-wrapper table {
+   		 width: 70%;
+	}
+	
+	.sub-container .otoi-wrapper .ran_wrap legend {
+   		 width: 25%;
+	}
+	
+	.sub-container .otoi-wrapper .ran_wrap select {
+    	width: 47%;
+	}
+	
+	.sub-container .otoi-wrapper .ran_wrap textarea {
+		width: 98%;
+		height: 30vh;
+	}
+}
+
+
+
+@media (max-width: 768px){
+
+	nav {
+   		 width: 95%;
+	}
+	
+	.main-wrap-top p {
+		width: 100%;
+		margin: 3em 0;
+		padding: 0 1em;
+	}
+	
+	.sub-top-bg h1 {
+		position: absolute;
+		left: 30%;
+	}
+	
+	.sub-top-bg h1 {
+   	 left: 30%;
+	}
+	
+	.sub-container .product-bg{
+		padding: 5em 0;
+	}
+	
+	.sub-container .product-bg svg {
+		display: block;
+		margin: 0 auto;
+		width: 70%;
+	}
+
+	.content-fff {
+		width: 85%;
+	}
+	
+	.content-tit-wrap {
+   	 	width: 60%;	
+	}
+
+	.sub-container .info-sub-wrap p {
+		width: 90%;
+	}
+	
+	.sub-container .otoi-wrapper .ran_wrap legend {
+		width: 29.5%;
+	}
+	
+	.sub-container .otoi-wrapper .ran_wrap .ran{
+		width: 60%;
+	}
+	
+	.sub-container .otoi-wrapper .ran_wrap select {
+		width: 56%;
+	}
+
+	.sub-container .otoi-wrapper .sendBtn {
+		display: block;
+		margin: 2em auto;
+		padding: 1em 3em;
+		font-size: 1.2em;
+	}
+	
+	footer .footer-inner {
+		background: none;
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 425px){
+	
+	.lang-wrap{
+		display: none;
+	}
+	
+	.mSubMenu{
+		display: none;
+	}
+	
+	.mOpen{
+		display: block;
+		z-index: 9999;
+	}
+	
+	.mHide{
+		display: none;
+	}
+	
+	.mSlide{
+		width: 70%;
+		right: 0%;
+		animation-duration: .2s;
+  		animation-name: slide;
+		position: fixed;
+	}
+	
+	.mMenu{
+		z-index: 8;
+	}
+	
+	.mMenu-container{
+		display: block;
+	}
+	
+	@keyframes slide{
+	  from {
+		margin-left: 0%;
+		width: 0%;
+	  }
+
+	  to {
+		 width: 70%;
+		 right: 0;
+	  }
+	}
+	
+	@keyframes bye{
+
+	  to {
+		 width: 0%;
+		 right: -70%;
+	  }
+	}
+	
+	nav{
+		width: 0%;
+		height: 100vh;
+		overflow: hidden;
+		position: absolute;
+		display: block;
+		margin: 0;
+		right: -77%;
+		z-index: 11;
+	}
+	
+	nav .nav-inner{
+		width: 100%;
+		margin: 4.5em auto;
+	}
+	
+	.nav-wrap{
+		display: none;
+	}
+	
+	.main-wrap-top {
+		margin-bottom: 3em;
+		padding: 1em 1em;
+		text-align: center;
+	}
+	
+	.main-wrap-top h1.main-wrap-tit {
+		font-size: 1.56em;
+		margin: 3em auto 2em;
+		width: 100%;
+	}
+	
+	.main-wrap {
+		background-color: #F3DAA0;
+		width: 100%;
+		height: 16vh;
+		border-radius: 50% / 100%;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		padding-top: 3em;
+	}
+	
+	.main-wrap h1{
+		font-size: 0.7em;
+	}
+	
+	.content-tit-wrap {
+		width: 100%;
+	}
+	
+	.main-content-wrap h1 {
+		font-size: 1.5em;
+		letter-spacing: 0.08em;
+	}
+	
+	.content-fff p {
+		padding: 1em 1em;
+	}
+	
+	.main-wrap-reverse {
+		background-color: #F3DAA0;
+		width: 100%;
+		height: 20vh;
+	}
+
+	.sub-top-bg h1 {
+		left: 15%;
+	}
+	
+	.sub-container .main-wrap-top {
+		padding: 25em 2em 0;
+	}
+	
+	.sub-container .info-bg {
+		background: url(http://image.kyobobook.co.kr/newimages/giftshop_new/work/1810/1492504279644_%EB%8C%80%EC%A0%8403.jpg) no-repeat;
+		width: 85%;
+		display: block;
+		margin: 0 auto 4em;
+		height: 30vh;
+	}
+	
+	.sub-container .info-sub-wrap p {
+		width: 100%;
+		padding: 0 2em;
+	}
+	
+	.sub-container .product-box{
+		display: block;	
+	}
+	
+	.sub-container .product-bg{
+		width: 100%;
+		padding: 0;
+	}
+	
+	.sub-container .product-bg svg{
+		width: 30%;
+	}
+	
+	.sub-container .product-desc {
+		width: 100%;
+		height: auto;
+	}
+	
+	.product-tit {
+   		 text-align: center;
+	}
+	
+	
+	footer .footer-inner .footer-left-box {
+		width: 78%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	footer .footer-inner .footer-right-box{
+		display: none;
+	}
+	
+	footer .footer-inner .footer-left-box img {
+		margin: 2em auto 0;
+		display: block;
+	}
+	
+	.sub-container .notice-wrapper table {
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 375px){
+	
+	.sub-container .sub-wrapper {
+		font-family: 'Sawarabi Gothic', sans-serif;
+		font-size: 0.8em;
+	}
+	
+	.sub-container .main-wrap-top h1.sub-tit {
+   		 font-size: 2em;
+	}
+	
+	.sub-container .main-wrap-top {
+		position: relative;
+		top: 8%;
+	}
+	
+	.main-wrap-top h1.main-wrap-tit {
+		font-size: 1.56em;
+		margin: 0em auto 0em;
+	}
+	
+	.sub-top-bg h1 {
+		left: 8%;
+	}
+	
+	.sub-container .otoi-wrapper .ran_wrap legend {
+		width: 29.5%;
+		text-align: center;
+		padding: 1em 0;
+	}
+	
+	.sub-container .otoi-wrapper {
+		font-family: 'Sawarabi Gothic', sans-serif;
+		width: 100%;
+	}
+}
+
+

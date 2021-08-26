@@ -1,0 +1,704 @@
+/**** basic setting **/
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+textarea{
+	resize: none;
+}
+
+/* for JP fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+
+*{
+	margin:  0;
+	padding:  0;    
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+}
+
+.mMenu-container{
+	width: 100%;
+	display: none;
+	position: absolute;
+	position: absolute;
+    top: 3%;
+    left: 2%;
+
+}
+
+.mMenu{
+  position: absolute;
+    left: 5%;
+    top: 3%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.hamburger .line{
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+	
+.mSubMenu{
+	display: none;
+}
+
+#hamburger-3.is-active .line:nth-child(1),
+#hamburger-3.is-active .line:nth-child(3){
+  width: 40px;
+}
+
+#hamburger-3.is-active .line:nth-child(1){
+  -webkit-transform: translateX(-10px) rotate(-45deg);
+  -ms-transform: translateX(-10px) rotate(-45deg);
+  -o-transform: translateX(-10px) rotate(-45deg);
+  transform: translateX(-10px) rotate(-45deg);
+}
+
+#hamburger-3.is-active .line:nth-child(3){
+  -webkit-transform: translateX(-10px) rotate(45deg);
+  -ms-transform: translateX(-10px) rotate(45deg);
+  -o-transform: translateX(-10px) rotate(45deg);
+  transform: translateX(-10px) rotate(45deg);
+}
+
+.mSubMEnu{
+	display: none;
+}
+
+.container{
+	font-family: 'Kaisei Decol', serif; 
+		background: url('https://cdn.pixabay.com/photo/2020/12/16/14/56/farm-5836815_960_720.jpg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+	
+	opacity:0;
+}
+
+.lang-wrap{
+    width: 93%;
+    display: inline-flex;
+    justify-content: flex-end;
+	position: relative;
+	z-index: 2;
+
+}
+
+.lang-wrap .lang{
+    text-align: center;
+    margin: .5em;
+    padding: 0.2em 1.5em;
+    background: #333;
+    color: #fff;
+    font-size: .9em;
+    border-radius: 10px;
+}
+
+.nav-wrap{
+	width: 100%;
+	display: inline-flex;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+
+}
+
+nav{
+	width: 60%;
+	display: inline-flex;
+	margin: 1em auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: #fff;
+	padding: 1em 0;
+    border-radius: 7px;
+	box-shadow: 1px 3px 0px 4px #d8d1d1;
+}
+
+nav .nav-inner{
+	width: 20%;
+	cursor: pointer;
+	transition: all .35s ease-in-out;
+}
+
+nav .nav-inner:hover .eng-tit{
+	color: #ceb88f;
+	transition: all .35s ease-in-out;
+}
+
+.nav-inner .tit{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.nav-inner .eng-tit{
+	font-size: 1.2em;
+	font-family: 'Kaisei Decol', serif;
+		letter-spacing: 0.06em;
+
+}
+
+.nav-inner p{
+	font-family: 'Sawarabi Gothic', sans-serif;
+	font-size: 0.7em;
+	letter-spacing: 0.06em;
+}
+
+.center-tit{
+	display: block;
+    text-align: right;
+    font-size: 2em;
+    position: absolute;
+    top: 26%;
+    left: 58%;
+    color: #483e3e;
+	text-shadow: 4px 0 #dec2b1;
+}
+
+canvas{
+	width: 100%;
+	height: 85vh;
+}
+
+.main-container{
+	width: 100%;
+	height: 100vh;
+}
+
+.main-wrap{
+  background-color: #F3DAA0;
+  width: 100%;
+  height: 30vh;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-top: 4em;
+}
+
+.main-wrap-top{
+	margin-bottom: 3em;
+	padding: 1em 5em;
+	text-align: center;
+}
+
+
+.main-wrap-tit,
+.main-wrap-top h3{
+	font-family: 'Sawarabi Gothic', sans-serif;
+	display: inline-block;
+}
+
+.main-wrap-top h1.main-wrap-tit{
+	font-size: 2.3em;
+	margin: 3em 2em 2em;
+}
+
+.main-wrap-top h3{
+	letter-spacing: 0.09em;
+
+}
+
+.main-wrap-top h3:before{
+	content: ' ';
+    width: 4%;
+    display: block;
+    position: relative;
+    left: 52%;
+    background: rgba(0,0,0,0.4);
+    margin: 0 auto;
+    padding: 1.5em 1em;
+    border-radius: 50%;
+    top: 10%;
+}
+
+.main-wrap-top p{
+	padding: 0 4em;
+    width: 65%;
+    line-height: 2;
+    font-size: 1.2em;
+	margin: .5em auto 3em;
+	text-align: left;
+	letter-spacing: 0.05em
+}
+
+
+.main-content-wrap{
+	background: #F3DAA0;
+	width: 100%;
+	height: auto;
+	padding-top: 5em;
+	padding-bottom: 3em;
+}
+
+ h1.main-content-tit{
+	text-align: center;
+	font-size: 3.5em;
+	letter-spacing: 1em;
+	margin: 3em auto 1em;
+	text-shadow: 4px 0 #eee;
+	color: #2a584e;
+}
+
+.content-fff{
+    background: #fff;
+    width: 55%;
+    margin: 0em auto 1em;
+    padding: 2em 0;
+    border-radius: 1em;
+    position: relative;
+    top: 20%;
+}
+
+.main-content-wrap h1,
+.main-content-wrap h3{
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.main-content-wrap h1{
+	font-size: 2em;
+    letter-spacing: 0.08em;
+}
+
+.content-tit-wrap{
+	width: 40%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-fff p{
+	padding: 1em 5em;
+	line-height: 2;
+	letter-spacing: 0.05em;
+	font-size: 1.2em;
+}
+
+
+.main-wrap-reverse{
+  background-color: #F3DAA0;
+  width: 100%;
+  height: 30vh;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-top: 4em;
+transform: rotate(180deg);
+	z-index: 999;
+}
+
+
+.fixed-wrap{
+    background: url(https://cdn.pixabay.com/photo/2021/08/17/10/23/flowers-6552611_960_720.jpg) no-repeat; 
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    top: -67%;
+    z-index: -1;
+    height: 100vh;
+}
+
+footer .footer-inner{
+    padding: 2em 5em;
+    display: inline-flex;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: relative;
+}
+
+footer .footer-inner .footer-left-box,
+footer .footer-inner .footer-right-box{
+}
+
+footer .footer-inner .footer-left-box{
+	width: 50%;
+	text-align: center;
+}
+
+footer .footer-inner .footer-left-box img{
+	    margin: 2em auto 0;
+    display: block;
+}
+
+footer .footer-inner .footer-right-box{
+	width: 60%
+}
+
+footer .footer-inner .footer-right-box ul{
+	width: 40%;
+	margin: 2.5em auto;
+	display: inline-block;
+}
+
+footer .footer-inner .footer-right-box ul li{
+	margin: 1em auto;
+}
+
+footer .footer-copy{
+	display: block; 
+	widtH: 100%;
+}
+
+
+/** sub **/
+
+.sub-container{
+	background: #fff;
+	height: auto;
+	opacity: 1;
+}
+
+.sub-top-bg{
+	width: 100%;
+    background: url(http://image.kyobobook.co.kr/newimages/giftshop_new/work/1768/1492504294785_%EB%8C%80%EC%A0%8401.jpg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+.sub-top-bg h1{
+    position: absolute;
+    top: 87%;
+    left: 20%;
+    background: #fff;
+    padding: .5em 3em;
+    letter-spacing: 0.1em;
+    font-size: 1.6em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-shadow: 0px 3px burlywood;
+}
+
+.sub-container .main-wrap-top{
+	padding: 20em 5em 0;
+}
+
+.sub-content-wrap{
+	width: 50%;
+	background: #fff;
+	border: 1px solid red;
+}
+
+.sub-container .info-bg{    
+	background: url(http://image.kyobobook.co.kr/newimages/giftshop_new/work/1810/1492504279644_%EB%8C%80%EC%A0%8403.jpg) no-repeat;
+    width: 52%;
+    display: block;
+    margin: 0 auto 4em;
+    height: 38vh;
+    background-size: cover;
+}
+
+.product-top-bg{
+	background: url('http://image.kyobobook.co.kr/newimages/giftshop_new/work/1045/1492768462400_%EC%82%AC%EB%B3%B8%20-20170421_081521.jpg') no-repeat;
+	    background-size: cover;
+    height: 50vh;
+    background-position: center;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+.sub-container .info-sub-wrap:before{
+	content:'';
+	height: 20vh;
+	background: #d1d1d1;
+	width: 1px;
+	display: block;
+	margin: 0 auto;
+}
+
+.sub-container .info-sub-wrap p{
+	padding: 0 4em;
+    width: 65%;
+    line-height: 2;
+    font-size: 1.2em;
+	margin: 3em auto 3em;
+	text-align: left;
+	letter-spacing: 0.05em
+}
+
+
+.sub-container .main-wrap-top h1.sub-tit{
+	font-size: 2.4em;
+	font-family: 'Sawarabi Gothic', sans-serif;
+	letter-spacing: 0.1em;
+	margin: 2em auto .5em;
+}
+
+.sub-container .sub-wrapper{
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+section.product-container{
+	width: 100%;
+	height: auto;
+	margin: 0 0 3em 0;
+}
+
+.product-tit{
+	text-align: left;
+	font-size: 2em;
+	margin: 1em auto .5em;
+}
+
+.sub-container .product-box{
+	display: inline-flex;
+	widtH: 100%;
+	justify-content: center;
+    align-items: center;
+	margin: 6em auto;
+}
+
+.sub-container .product-bg{
+	background-size: cover;
+    height: 20vh;
+    background-position: center;
+	width: 20%;
+	padding: 5em 0;
+}
+
+.sub-container .product-desc{
+	width: 50%;
+	height: 23vh;
+}
+
+.sub-container .product-bg svg{
+	display: block;
+	margin: 0 auto;
+}
+
+.sub-container .product-sub-desc{
+	padding: 1em 2em;
+	line-height: 1.7;
+	font-size: 1.2em;
+}
+
+.sub-container .notice-wrapper{
+	font-family: 'Sawarabi Gothic', sans-serif;
+	width: 100%;
+	margin: 3em 0;
+}
+
+.sub-container .notice-wrapper table{
+	width: 60%;
+	margin: 2em auto 5em;
+	border: 1px solid;
+}
+
+.sub-container .notice-wrapper table thead th{
+	padding: 1em;
+	border-bottom: 2px solid #e1e1e1;
+	letter-spacing: 0.2em;
+}
+
+.sub-container .notice-wrapper table thead th.tNum{
+	width: 20%;
+}
+
+.sub-container .notice-wrapper table thead th.tTit{
+	width: 50%;
+}
+
+.sub-container .notice-wrapper table thead th.tWriter{
+	width: 20%;
+}
+
+.sub-container .notice-wrapper table tbody tr td{
+	text-align: center;
+	padding: 1em;
+}
+
+.sub-container .notice-wrapper table tbody tr td:nth-child(2n){
+	cursor: pointer;
+}
+
+.sub-container .notice-wrapper table tbody tr td.tNaiyou{
+	line-height: 2;
+	text-align: left;
+	padding: 1em 3em
+}
+
+.sub-container .notice-wrapper table tbody tr td ol{
+	width: 50%;
+	margin: 2em auto;
+}
+
+.sub-container .notice-wrapper .backBtn{
+	border: 1px solid;
+	width: 7%;
+	padding: 1em 2em;
+	text-align: center;
+	margin: 0 auto 3em;
+	border-radius: 6px;
+	cursor: pointer;
+	background: #333;
+	color: #fff;
+}
+
+.sub-container .otoi-wrapper{
+	font-family: 'Sawarabi Gothic', sans-serif;
+	width: 70%;
+	margin: 3em auto;
+}
+
+.sub-container .otoi-wrapper form{
+	padding: 1em 0
+}
+
+.sub-container .otoi-wrapper .ran_wrap{
+	width: 100%;
+	display: inline-flex;	
+	justify-content: center;
+	margin: 1em auto;
+}
+
+.sub-container .otoi-wrapper .ran_wrap legend,
+.sub-container .otoi-wrapper .ran_wrap .ran{
+}
+
+.sub-container .otoi-wrapper .ran_wrap legend{
+	padding: .5em;
+	width: 20%;
+	text-align: center;
+    padding: 1.2em 5em 0 0;
+	font-size: 1.1em;
+}
+
+.sub-container .otoi-wrapper .ran_wrap .ran{
+	padding: 1em;
+	font-size: 1.1em;
+	border-bottom: 1px solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 50%;
+}
+
+input::-ms-expand {  /* IE10, IE11*/
+   display:none;   /*숨겨진 화살표의 영역유지 X */
+   display:hidden;  /*숨겨진 화살표의 영역유지 O */
+　　outline: none;
+}
+
+.sub-container .otoi-wrapper .ran_wrap .ran:focus{
+	border-bottom: 2px solid orange;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+}
+
+.sub-container .otoi-wrapper .ran_wrap select{
+	width: 50%;
+	padding: 0.4em;
+	font-size: 1.1em;
+	margin: 1em 0;
+}
+
+.sub-container .otoi-wrapper .ran_wrap textarea{
+	width: 70%;
+	height: 40vh;
+	padding: 1em;
+	font-size: 1.03em;
+	letter-spacing: 0.07em;
+	font-family: 'Sawarabi Gothic', sans-serif;
+	margin: 3em auto 1em;
+}
+
+.sub-container .otoi-wrapper .sendBtn{
+	display: block;
+	margin: 2em auto;
+	padding: 1em 2em;
+	border: none;
+	background: #333;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 7px;
+	font-family: 'Sawarabi Gothic', sans-serif;
+
+}
+
+
+.main-wrap{
+	text-align: center;
+	color: #333;
+	font-size: 2.3em;
+}
+footer.sub-footer{
+	background: #F3DAA0;
+	justify-content: center;
+    display: inline-flex;
+    width: 100%;
+	padding-bottom: 3em;
+}
+
+footer .footer-inner{
+	background: none;
+	width: 65%
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

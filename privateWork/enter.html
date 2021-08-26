@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html>
+		<!--[if IE 8]><html lang="ko" class="ie8"><![endif]-->
+		<!--[if gt IE 8]><html lang="ko"><![endif]-->
+		<head>
+			<title>JA for Demo</title>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, user-scalable=no">
+			
+			<meta property="og:type" content="article" />
+			<meta property="og:title" content="" />
+			<meta property="og:description" content="" />
+			<meta property="og:image" content="" /> 
+			
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?	
+						family=Kaisei+Decol&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+			
+			<link rel="stylesheet" href="css/enter.css">
+			<script src="https://kit.fontawesome.com/2abc32f268.js" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+		</head>
+		<body>
+			
+				<div class="enter-wrap">
+					<div class="typing ">
+						貴方のそばに、
+						服部商店。
+					</div>
+				</div>
+			<script>
+				const main_con = document.querySelector('.enter-wrap');
+
+				window.addEventListener('DOMContentLoaded', () => {
+					asdf();
+				});
+				
+				const test = setTimeout(function asdf(){
+					document.querySelector('.enter-wrap').style.opacity ="0";
+					document.querySelector('.enter-wrap').style.transition ="all 1s ease-in-out";
+					location.href="index.html";
+				}, 2500);
+				
+				asdf();
+			</script>
+		</body>
+</html>

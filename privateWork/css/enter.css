@@ -1,0 +1,60 @@
+*{
+	margin:  0;
+	padding:  0;    
+	box-sizing: border-box;
+}
+
+
+.enter-wrap {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	width: 100%;
+	background: #eee;
+}
+
+.typing {
+  width: 30%;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+	position: absolute;
+	top: 40%;
+	font-family: 'Kaisei Decol', serif;
+
+}
+
+.shaa{
+	animation: showIndex 2s;
+	transition: all .4s ease;
+	border: 2px solid red;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@keyframes showIndex {
+	0%{
+		opacity: 1;
+		transition: all 1s ease;
+	}
+
+	100%{	
+		transition: all 1s ease;
+		opacity: 0;
+	}
+}
