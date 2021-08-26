@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* Reset CSS */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video, select, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #333;
+	line-height: 1.6em;
+	letter-spacing: -0.02em;
+	font-family:  'Rubik', 'NotoSansKR', sans-serif;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+caption {
+	display: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+em {
+	font-style: normal;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+	-ms-interpolation-mode: bicubic;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input::placeholder, 
+textarea::placeholder {
+  color: #999;
+  opacity: 1; /* FireFox */
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { /* Edge */
+  color: #999;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder { /* IE */
+  color: #999;
+}
+
+input:-mos-input-placeholder,
+textarea:-mos-input-placeholder { /* Firefox */
+  color: #999;
+}
+
+/*
+select {
+	background: #FFF url(../img/ic-select.svg) 95% 50% no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-size: 15px;
+}
+
+select::-ms-expand {
+	display: none;
+}
+*/
+

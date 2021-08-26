@@ -1,0 +1,290 @@
+@media (max-width: 1628px){
+	
+	.work-wrapper{
+		width: 32.9%;
+	}
+	
+}
+
+@media (max-width: 1252px){
+	
+	.skill-container{
+		width: 80%;
+	}
+	.work-wrapper{
+		width: 32.8%;
+	}
+	
+	.cord-tit{
+		padding: 0 1em;
+		font-size: 1.2em !important;
+	}
+	
+}
+
+@media (max-width: 1024px){
+	
+	.wrapper-color {
+		z-index: 222;
+		width: 23%;
+		opacity: 1;
+		height: 36vh;
+		background: #455E7C;
+		position: absolute;
+		right: 2em;
+		top: 20%;
+		color: #fff;
+		font-family: 'MapoFlowerIsland';
+		box-shadow: -12px 12px 1px 0 #c6ced4;
+	}
+
+	
+	.position-sub-tit {
+		font-weight: bold;
+		font-size: 1.5em;
+		letter-spacing: 0.05em;
+		margin: 3em 1em 0;
+		width: 60%;
+		word-break: keep-all;
+		line-height: 1.5;
+		position: relative;
+		top: 55%;
+		left: -8%;
+	}
+}
+
+@media (max-width: 1015px){
+	.work-wrapper{
+		width: 100%;
+		height: 70vh
+	}
+}
+
+@media (max-width: 856px){
+	.work-wrapper {
+		width: 100%;
+		height: 70vh;
+	}
+}
+
+@media (max-width: 768px){
+	
+	section.container {
+		font-size: 16px;
+		padding: 2em 2em;
+		width: 88%;
+	}
+	
+	.port-tit{
+		font-size: 2em;
+		text-align: center;
+		width: 100%;
+		margin: 2em;
+		letter-spacing: 0.15em;
+		font-weight: 600
+	}
+
+	.wrapper-division{
+		display:inline-flex;
+		background: #DFE8EB;
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		opacity: 1;
+	}
+	
+	.wrapper-color {
+		z-index: 222;
+		width: 27%;
+		opacity: 1;
+		height: 32vh;
+		top: 13%;
+	}
+	
+	.wrapper-color h1{
+		text-align: left; 
+		line-height: 1.5;
+		font-size: 1.3em;
+	}
+	
+	.position-sub-tit{
+		font-weight: bold;
+		font-size: 1.3em;
+		letter-spacing: 0.05em;
+		margin: 2em 1em 0;
+		width: 62%;
+		height: 13vh;
+		word-break: keep-all;
+		line-height: 1.5;
+		position: relative;
+		left: -30%;
+		top: 63%;
+		padding: 1em .5em;
+		background: #fff;
+		border-radius: 10px;
+		background: transparent
+	}
+
+	.sason-bg{
+		background-color: #fff;
+	  background-image: linear-gradient(-45deg, rgba(179, 213, 224, 0.5) 25%, transparent 25%, transparent 50%, rgba(179, 213, 224, 0.5) 50%, rgba(179, 213, 224, 0.5) 75%, transparent 75%, transparent 100%);
+	  background-size: 52px 52px;
+	}
+
+	.bottom-wrapper{
+		background: #DFE8EB; height: 30vh; padding: 1em 0;
+	}
+
+	.bottom-wrapper h2{
+		line-height: 2;
+		margin: 0 2em;
+	}
+	
+	.phoshop, .illust {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    padding: 3em 2em;
+    color: #fff;
+    font-size: .6em;
+}
+	
+	.skill-cord-tool .html, .skill-cord-tool .css, .skill-cord-tool .js {
+    width: 33%;
+    height: auto;
+    padding: 4em 2em;
+    color: #fff;
+    font-size: 0.7em;
+}
+
+}
+
+
+
+@media (max-width: 425px){
+	
+	.is-show {
+		background: #455E7C;
+		position: relative;
+		top: 0%;
+	}
+	.port-tit {
+		font-size: 1.5em;
+	}
+	
+	.more-wrap h2{
+		    font-size: .85em;
+	}
+	
+	.wrapper-color{
+		display: none;
+	}
+	
+	.wrapper-division{
+		height: 18vh;
+	}
+	
+	.position-sub-tit {
+		font-weight: bold;
+		font-size: 0.8em;
+		letter-spacing: 0.05em;
+		margin: 2em 1em 0;
+		width: 30%;
+		height: 5vh;
+		word-break: keep-all;
+		line-height: 1.5;
+		position: absolute;
+		left: 55%;
+		top: 25%;
+		padding: 1em .5em;
+		border-radius: 10px;
+		background: transparent;
+	}
+	
+	.skill-design-tool,
+	.skill-cord-tool{
+		display: block;
+	}
+	
+	.phoshop, .illust,
+	.skill-cord-tool .html, .skill-cord-tool .css, .skill-cord-tool .js{
+		width: auto;
+	}
+
+	.skill-container .skill-design-tool h1,
+	.skill-container .skill-cord-tool h1{
+		width: 100%;
+	}
+
+	.wrapper h1{
+		font-size: 1.2em;
+	}
+	
+	.work-wrapper{
+		width:100%;
+	}
+	
+	.work-desc{
+		width: 90%;
+	}
+	
+	.work-desc dl{
+		width: 95%;
+	}
+	
+	.design-tit, .cord-tit{
+		padding: 1em 0;
+	}
+}
+
+
+
+@media (max-width: 375px){
+	.port-tit {
+		font-size: 1.3em;
+		margin: 1.5em 0;
+	}
+	
+	.position-sub-tit {
+		font-weight: bold;
+		font-size: 0.8em;
+		letter-spacing: 0.05em;
+		margin: 2em 1em 0;
+		width: 45%;
+		height: 5vh;
+		word-break: keep-all;
+		line-height: 1.5;
+		position: absolute;
+		left: 53%;
+		top: 19%;
+		padding: 1em .5em;
+		border-radius: 10px;
+		background: transparent;
+	}
+	
+	.more-wrap {
+		background-image: linear-gradient(
+	140deg
+	, #f3f5f0 80%, #123456 20%);
+		padding: 3em 2em;
+	}
+	
+	.wrapper-division {
+		height: 12vh;
+	}
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
