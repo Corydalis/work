@@ -372,4 +372,18 @@
 	}
 }
 
+@media (max-width: 350px){
+	.sub-top-bg h1 {
+   		 left: 4%;
+	}
+	
+	.main-wrap-top p{
+		font-size: 1em;
+	}
+	
+	.sub-container .info-bg {
+	    margin: 7em auto 4em;
+	}
+}
+
 
