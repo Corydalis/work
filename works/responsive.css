@@ -164,6 +164,10 @@
 
 @media (max-width: 425px){
 	
+	*{
+		border: 1px solid #333
+	}
+	
 	.is-show {
 		background: #455E7C;
 		top: 0%;
