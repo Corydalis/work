@@ -40,25 +40,64 @@ body{
 
 /******* basic end *********/
 
+.skill{
+	display: none;
+}
+
+
 .boo{
     background:  transparent;
     position: absolute;
+	left:0;
   	top: 100%;
-  	display: none;
   	transition:  all .35s ease;
+	width: 100%;
+	margin: 0 auto;
+	height:  auto;
+	padding-top: 10em
 }
 
+
 .is-show{
+	display: block;
     background:  #455E7C;
     position: absolute;    
     top: 0%;
     height: auto !important;
     z-index: 898;
-    transition:  all .6s ease;
-    display: block;
-	width: 100vw;
-	left:0
+  	transition:  all .35s ease;
+    display: block ;
+	left:0;
+	 animation-duration: 1s;
+ 	 animation-name: Up;
 }
+
+.downEvt{
+	animation-duration: 3s;
+	top: 100%;
+	left:0;
+	position: absolute;
+  	transition:  all .35s ease;
+}
+
+@keyframes Up {
+  from {
+	top: 100%;
+  }
+
+  to {
+    top: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes Down {
+  100% {
+   position: absolute;
+   top: 100%;
+  }
+}
+
 
 
 /*
@@ -495,8 +534,3 @@ i.fas{
 	z-index: 999;
 	color: #fff;
 }
-
-
-
-
-
