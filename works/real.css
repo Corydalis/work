@@ -54,7 +54,6 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	height:  auto;
-	margin-top: 1em
 }
 
 
@@ -70,6 +69,8 @@ body{
 	left:0;
 	 animation-duration: 1s;
  	 animation-name: Up;
+		padding-top: 1em
+
 }
 
 .downEvt{
