@@ -11,6 +11,7 @@
 	.skill-container{
 		width: 80%;
 	}
+	
 	.work-wrapper{
 		width: 32.8%;
 	}
@@ -90,7 +91,7 @@
 		background-repeat: no-repeat; 
 		background-size: cover; 
 		opacity: 1;
-	}
+	} 
 	
 	.wrapper-color {
 		z-index: 222;
@@ -165,15 +166,16 @@
 	
 	.is-show {
 		background: #455E7C;
-		position: relative;
 		top: 0%;
+		display: block;
 	}
+	
 	.port-tit {
 		font-size: 1.5em;
 	}
 	
 	.more-wrap h2{
-		    font-size: .85em;
+		font-size: .85em;
 	}
 	
 	.wrapper-color{
@@ -274,17 +276,3 @@
 	}
 }
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
