@@ -76,21 +76,22 @@
 								<h2>
 									직업이 취미가 되어버렸습니다.
 								</h2>
-								<h2 style="margin:1em 3em; text-align: center;">
-									장영주에 대해 더 알아보기
-								</h2>
+								
 							</span>
 						</div>
 						
 					</div>
-					<div class="wrapper">
+					<div class="wrapper more_more">
+						<h2 style="margin:1em 3em; text-align: center;">
+									더 알아보기
+								</h2>
 						<h1>
 							<i class="fas fa-angle-double-down"></i>
 						</h1>
 					</div>
 					</div>
 					<!-- skill start -->
-					<div class="work-container wrapper boo">
+					<div class="work-container skill boo">
 						<h1 class="skill-tit"> SKILLS </h1>
 						<div class="skill-container">
 							<div class="skillWrap skill-design-tool">
@@ -1056,29 +1057,27 @@
 
 			var top  = window.pageYOffset || document.documentElement.scrollTop;
 
-			 $(function(){
-				const scroll = $(window).scrollTop();
-				 	if(scroll == 0){
-						boo.classList.remove('is-show');
-					}
-			 });
-			
 
-			downBtn.addEventListener('click', (e) =>{
+			
+/*
+			downBtn.addEventListener('click', () =>{
 					boo.classList.add('is-show');
-				});
+				});  */
 			
 			window.addEventListener('scroll', () => {			     
-			    if(p.getBoundingClientRect().top <=  !p.classList.contains('is-show')){
+			   /* if(p.getBoundingClientRect().top <=  !p.classList.contains('is-show')){
 			      boo.classList.add('is-show');	
-					return
+			    } */
+				
+				if(window.scrollY == 0){
+					boo.classList.add('downEvt');
 			    }
 				
-				if(window.scrollY === 0){
-			    	boo.classList.remove('is-show');
-			    }
+				if(window.scrollY > 10){
+					boo.classList.add('is-show');
+					boo.classList.remove('downEvt');
+				}
 			}); 
-			
 			
 		// skill percent start
 
