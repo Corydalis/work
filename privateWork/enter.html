@@ -20,15 +20,16 @@
 			<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
 			
 			<link rel="stylesheet" href="css/enter.css">
+			<link rel="stylesheet" href="css/responsive.css">
 			<script src="https://kit.fontawesome.com/2abc32f268.js" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 		</head>
 		<body>
 			
 				<div class="enter-wrap">
-					<div class="typing ">
+					<div class="typing">
 						貴方のそばに、
-						服部商店。
+						井川商店。
 					</div>
 				</div>
 			<script>
@@ -37,14 +38,39 @@
 				window.addEventListener('DOMContentLoaded', () => {
 					asdf();
 				});
+
+				/***** setting each device size ****/
 				
-				const test = setTimeout(function asdf(){
+				const currWidth = document.documentElement.clientWidth;
+				/* desktop */
+				
+				if(currWidth < 2560){
+					setTimeout(function (){
 					document.querySelector('.enter-wrap').style.opacity ="0";
 					document.querySelector('.enter-wrap').style.transition ="all 1s ease-in-out";
 					location.href="index.html";
-				}, 2500);
+				}, 3400);
+				}
+
+				if(currWidth < 769){
+					const nor_time = setTimeout(function (){
+					document.querySelector('.enter-wrap').style.opacity ="0";
+					document.querySelector('.enter-wrap').style.transition ="all 1s ease-in-out";
+					location.href="index.html";
+				}, 5000);
+				}
+				/* 320px m */
 				
-				asdf();
+				if(currWidth < 330){
+					 setTimeout(function (){
+						document.querySelector('.enter-wrap').style.opacity ="0";
+						document.querySelector('.enter-wrap').style.transition ="all 1s ease-in-out";
+						location.href="index.html";
+						 alert('330');
+					}, 6000);
+				}
+				
+				
 			</script>
 		</body>
 </html>
