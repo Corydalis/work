@@ -52,6 +52,33 @@
 		top: 55%;
 		left: -8%;
 	}
+	
+	.end-desc{
+		margin: 3em 0 0 0;
+	}
+	
+	.work-wrapper{
+		height: auto;
+	}
+	
+	.work-wrapper h1{
+		word-break: keep-all;
+		line-height: 1.5;
+   		font-size: 1.5em;
+	}
+	
+	.work-img img, .work-m img{
+		height: auto;
+	}
+	
+	.work-img-wrapper{
+		padding: 3em 0 1em 0;
+	}
+	
+	.skill-container .skill-cord-tool h1.cord-tit{
+		font-size: 1.8em;
+		padding: 0 1em;
+	}
 }
 
 @media (max-width: 1015px){
@@ -72,7 +99,7 @@
 	
 	section.container {
 		font-size: 16px;
-		padding: 2em 2em;
+		padding: 2em 1em;
 		width: 88%;
 	}
 	
@@ -141,22 +168,34 @@
 	}
 	
 	.phoshop, .illust {
-    width: 40%;
-    height: auto;
-    margin: 0 auto;
-    border: 1px solid #fff;
-    padding: 3em 2em;
-    color: #fff;
-    font-size: .6em;
-}
+		width: 40%;
+		height: auto;
+		margin: 0 auto;
+		border: 1px solid #fff;
+		padding: 3em 2em;
+		color: #fff;
+		font-size: .6em;
+	}
 	
 	.skill-cord-tool .html, .skill-cord-tool .css, .skill-cord-tool .js {
-    width: 33%;
-    height: auto;
-    padding: 4em 2em;
-    color: #fff;
-    font-size: 0.7em;
-}
+		width: 33%;
+		height: auto;
+		padding: 4em 2em;
+		color: #fff;
+		font-size: 0.7em;
+	}
+
+	h1.design-tit,
+	h1.cord-tit{
+		color:  #333;
+		background :#fff;
+		font-family: 'NEXON Lv1 Gothic OTF Light';
+		font-size: 1.3em;
+	}
+	
+	.work-img-wrapper{
+		height: 15vh
+	}
 
 }
 
@@ -164,22 +203,17 @@
 
 @media (max-width: 425px){
 	
-	*{
-		border: 1px solid #333
-	}
-	
 	.is-show {
 		background: #455E7C;
 		top: 0%;
 		display: block;
 	}
 	
-	.downEvt {
-	    animation-duration: 3s;
-	    top: 100%;
-	    left: 0;
-	    position: absolute;
-	    transition: all .35s ease;
+	.downEvt{
+		top: 100%;
+		left:0;
+		position: absolute;
+		transition:  all .35s ease;
 	}
 	
 	.port-tit {
@@ -208,26 +242,52 @@
 		word-break: keep-all;
 		line-height: 1.5;
 		position: absolute;
-		left: 55%;
-		top: 25%;
+		left: 51%;
+		top: 19%;
 		padding: 1em .5em;
 		border-radius: 10px;
 		background: transparent;
 	}
 	
+	.boo .skill-tit,
+	.boo .end-desc{
+    margin: 1em auto 1em;
+    color: #fff;
+    font-size: 1.8em;
+}
+	
+	.boo .end-desc{
+		margin-top: 3em;
+	}
+	
 	.skill-design-tool,
 	.skill-cord-tool{
 		display: block;
+		font-size: 1.7em;
 	}
 	
 	.phoshop, .illust,
 	.skill-cord-tool .html, .skill-cord-tool .css, .skill-cord-tool .js{
 		width: auto;
+		font-size: .6em;
 	}
 
 	.skill-container .skill-design-tool h1,
 	.skill-container .skill-cord-tool h1{
 		width: 100%;
+	}
+	
+	.skill-container .skill-cord-tool h1{
+		padding: 0
+	}
+	
+	
+	.skill-container .fa-keyboard{
+		display: block;
+	}
+	
+	.work-img-wrapper{
+		height: 20vh;
 	}
 
 	.wrapper h1{
@@ -246,14 +306,38 @@
 		width: 95%;
 	}
 	
-	.design-tit, .cord-tit{
-		padding: 1em 0;
+	.cord-tit{
+		padding: 0
+	}
+
+	.skill-container .skill-design-tool .fa-object-ungroup{
+		margin: 0;
+		padding: 1em 0 0.3em 0;
+	}
+	
+	.skill-container .skill-design-tool h1{
+		padding: 0;
+	}
+	
+	.skill-container .fa-keyboard{
+		padding-top: 1em;
+   		 padding-bottom: 0;
+		margin-top: 0;
+	}
+	
+	.skill-container .skill-cord-tool h1.cord-tit{
+		padding: 0;
 	}
 }
 
 
 
 @media (max-width: 375px){
+	
+	section.container {
+		padding: 2em 1em;
+	}
+	
 	.port-tit {
 		font-size: 1.3em;
 		margin: 1.5em 0;
@@ -264,13 +348,13 @@
 		font-size: 0.8em;
 		letter-spacing: 0.05em;
 		margin: 2em 1em 0;
-		width: 45%;
+		width: 35%;
 		height: 5vh;
 		word-break: keep-all;
 		line-height: 1.5;
 		position: absolute;
-		left: 53%;
-		top: 19%;
+		left: 48%;
+		top: 15%;
 		padding: 1em .5em;
 		border-radius: 10px;
 		background: transparent;
@@ -280,25 +364,48 @@
 		background-image: linear-gradient(
 	140deg
 	, #f3f5f0 80%, #123456 20%);
-		padding: 1em 2em;
+		padding: 3em 2em;
 	}
 	
 	.wrapper-division {
 		height: 12vh;
 	}
+		
+	.is-show {
+		background: #455E7C;
+		top: 0%;
+		display: block;
+	}
+	
+	.downEvt{
+		top: 100%;
+		left:0;
+		position: absolute;
+		transition:  all .35s ease;
+	}
+	
+	.skill-container .skill-design-tool h1{
+		padding: .3em 0;
+	}
+	
 }
 	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 280px){
+	.more-wrap{
+		padding: 3em 1em;
+	}
+	
+	.skill-design-tool, .skill-cord-tool{
+		font-size: 1em;
+	}
+	
+	.end-desc{
+		padding: 1em 2em;
+	}
+	
+	.work-wrapper{
+		height: auto;
+	}
+}
