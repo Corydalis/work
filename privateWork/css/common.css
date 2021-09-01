@@ -410,7 +410,7 @@ footer .footer-copy{
 
 .sub-top-bg h1{
     position: absolute;
-    top: 87%;
+    top: 89%;
     left: 20%;
     background: #fff;
     padding: .5em 3em;
@@ -422,7 +422,7 @@ footer .footer-copy{
 }
 
 .sub-container .main-wrap-top{
-	padding: 20em 5em 0;
+	padding: 24em 5em 0;
 }
 
 .sub-content-wrap{
@@ -442,7 +442,7 @@ footer .footer-copy{
 
 .product-top-bg{
 	background: url('http://image.kyobobook.co.kr/newimages/giftshop_new/work/1045/1492768462400_%EC%82%AC%EB%B3%B8%20-20170421_081521.jpg') no-repeat;
-	    background-size: cover;
+	background-size: cover;
     height: 50vh;
     background-position: center;
 	position: absolute;
@@ -613,7 +613,7 @@ section.product-container{
 	padding: .5em;
 	width: 20%;
 	text-align: center;
-    padding: 1.2em 5em 0 0;
+    padding: 1.2em 8em 0 0;
 	font-size: 1.1em;
 }
 
@@ -689,16 +689,3 @@ footer .footer-inner{
 	background: none;
 	width: 65%
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
