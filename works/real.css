@@ -54,6 +54,7 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	height:  auto;
+	padding-top: 3em
 }
 
 
@@ -69,8 +70,6 @@ body{
 	left:0;
 	 animation-duration: 1s;
  	 animation-name: Up;
-		padding-top: 1em
-
 }
 
 .downEvt{
@@ -292,6 +291,7 @@ font-family: 'MapoFlowerIsland';
     word-break: keep-all;
     line-height: 1.5;
     position: relative;
+	text-align: center;
 }
 
 .sason-bg{
@@ -316,6 +316,11 @@ font-family: 'MapoFlowerIsland';
 	padding: 3em 5em
 }
 
+.more_more h2{
+    margin: 1em 1em 0.5em;
+    font-size: 1.3em;
+    text-align: center;
+}
 /*************************** skillContaner  *****************************/
 
 
@@ -332,6 +337,7 @@ h3.skill-tit{
 .boo .skill-tit{
 	margin:  1em auto 1em;
 	color:  #fff;
+	font-size: 3em;
 }
 
 .skill-container{
@@ -351,8 +357,8 @@ h3.skill-tit{
 	width: 100%;
 }
 
-.design-tit,
-.cord-tit{
+h1.design-tit,
+h1.cord-tit{
 	color:  #333;
 	background :#fff;
 	font-family: 'NEXON Lv1 Gothic OTF Light';
@@ -366,29 +372,48 @@ h3.skill-tit{
 
 .phoshop, .illust{
 	width:  40%;
-	height: 30vh;
 	margin:  0 auto;
 	border:  1px solid #fff;
-	padding:  2em 2em 0;
+padding: 5em 2em 5em;
 	color:  #fff;
+	text-align: center;
 }
 
+.skill-container .skill-design-tool .fa-object-ungroup{
+	display: block;
+    margin: 2.8em 0 .5em;
+	padding: 0 0.2em;
+}
+
+
+.skill-container .fa-keyboard{
+		display: block;
+    margin: 2.8em 0 .5em;
+	padding: 0 0.2em;
+}
 .skill-container .skill-design-tool h1{
-	display: block !important;
-	widtH:  20%;
+	display: block ;
+    text-align: center;
+	padding: 0 2em;
 }
 
 .skill-container .skill-cord-tool h1{
 	width:  20%;
+	text-align: center;
+	padding: 0 0.2em;
 }
 
-.skill-cord-tool .html,
-.skill-cord-tool .css,
-.skill-cord-tool .js{
-	width:  33%;
-	height: 30vh;
-	padding:  2em 2em 0;
-	color:  #fff;
+.phoshop h1,
+.illust h1{
+	margin-top: 1em;
+}
+
+.skill-cord-tool .html, .skill-cord-tool .css, .skill-cord-tool .js {
+    width: 33%;
+    height: auto;
+    padding: 5em 2em 5em;
+    color: #fff;
+    text-align: center;
 }
 
 .skill-cord-tool .html:after{
@@ -405,6 +430,7 @@ h3.skill-tit{
 	text-align:  center;
     width: 100%;
     font-family: 'NEXON Lv1 Gothic OTF Light';
+	margin-top: 1em;
 }
 
 .progress-text,
@@ -416,9 +442,10 @@ h3.skill-tit{
 	font-size:  3em;
 }
 
-.end-desc{
-    font-family: 'IBMPlexSansKR-Regular' !important;
+h1.end-desc{
 	color:  #fff;
+	margin: 3em 0 0 0;
+	font-size: 3em;
 }
 
 .bar {
@@ -443,10 +470,14 @@ i.fas{
 }
 
 .work-wrapper{
-	margin: 0.2em auto;
+	margin: 0.2em auto 4em;
 	width: 33%;
 	height: 55vh;
 	display: inline-grid;
+}
+
+.work-wrapper h1{
+	color: #fff;
 }
 
 .work-img-wrapper{
@@ -484,6 +515,7 @@ i.fas{
 
 .work-m{
 	width: 17%;
+	margin: 0 0 0 1em;
 }
 
 .work-only-m{
@@ -510,6 +542,7 @@ i.fas{
 
 .work-desc dt{
 	font-weight: bold;
+	margin-top: 1em;
 }
 
 .work-desc dt,
