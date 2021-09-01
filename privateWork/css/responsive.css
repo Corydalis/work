@@ -3,6 +3,10 @@
 		left: 50%;
 	}
 	
+	.typing{
+		width: 70%
+	}
+	
 	.main-wrap-top p{
 		width: 90%;
 	}
@@ -32,7 +36,7 @@
 	}
 	
 	.sub-container .main-wrap-top {
-    	padding: 17em 5em 0;
+    	padding: 20em 5em 0;
 	}
 }
 
@@ -48,7 +52,7 @@
 	}
 	
 	.sub-container .main-wrap-top {
-		padding: 32em 5em 0;
+		padding: 20em 5em 0;
 
 	}
 	.sub-top-bg h1 {
@@ -87,19 +91,27 @@
    		 width: 95%;
 	}
 	
+	.sub-container{
+	}
+	
 	.main-wrap-top p {
 		width: 100%;
 		margin: 3em 0;
 		padding: 0 1em;
 	}
 	
-	.sub-top-bg h1 {
-		position: absolute;
-		left: 30%;
-	}
 	
 	.sub-top-bg h1 {
-   	 left: 30%;
+    left: 24%;
+    width: 40%;
+    top: 88%;
+    font-size: 1.5em;
+    transform: translate(20%, 0%);
+    text-align: center;
+	}
+	
+	.sub-container .main-wrap-top {
+		padding: 19em 2em 0
 	}
 	
 	.sub-container .product-bg{
@@ -147,13 +159,30 @@
 		background: none;
 		width: 100%;
 	}
+	
+	.sub-container .otoi-wrapper .ran_wrap legend {
+    text-align: center;
+    padding: 1.2em 3em 0 0;
+    font-size: 1.1em;
+}
+	.sub-container .otoi-wrapper .ran_wrap textarea{
+		width: 100%
+	}
 }
 
 
 @media (max-width: 425px){
+	.container{
+		height: 50vh;
+	}
 	
 	.lang-wrap{
 		display: none;
+	}
+	
+	.center-tit {
+		left: 2%;
+		font-size: 1.25em;
 	}
 	
 	.mSubMenu{
@@ -231,6 +260,11 @@
 		text-align: center;
 	}
 	
+	
+	.sub-container .main-wrap-top {
+    padding: 0em 2em 0;
+}
+	
 	.main-wrap-top h1.main-wrap-tit {
 		font-size: 1.56em;
 		margin: 3em auto 2em;
@@ -240,11 +274,9 @@
 	.main-wrap {
 		background-color: #F3DAA0;
 		width: 100%;
-		height: 16vh;
 		border-radius: 50% / 100%;
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
-		padding-top: 3em;
 	}
 	
 	.main-wrap h1{
@@ -271,12 +303,14 @@
 	}
 
 	.sub-top-bg h1 {
-		left: 15%;
+    left: 0%;
+    margin: 0 auto;
+    display: block;
+    width: 75%;
+    text-align: center;
 	}
 	
-	.sub-container .main-wrap-top {
-		padding: 25em 2em 0;
-	}
+
 	
 	.sub-container .info-bg {
 		background: url(http://image.kyobobook.co.kr/newimages/giftshop_new/work/1810/1492504279644_%EB%8C%80%EC%A0%8403.jpg) no-repeat;
@@ -332,11 +366,32 @@
 	.sub-container .notice-wrapper table {
 		width: 100%;
 	}
+	
+	.sub-container .otoi-wrapper .ran_wrap legend {
+    padding: 1.2em 1em 0 0;
+    font-size: 1.1em;
+}
+	
+
 }
 
 
 @media (max-width: 375px){
 	
+	nav .nav-inner {
+		width: 100%;
+		margin: 3.2em auto;
+	}
+	
+	.container{
+		height: 65vh;
+	}
+	
+	
+	.center-tit{
+		left: 0;
+		font-size: 1.14em;
+	}
 	.sub-container .sub-wrapper {
 		font-family: 'Sawarabi Gothic', sans-serif;
 		font-size: 0.8em;
@@ -372,18 +427,108 @@
 	}
 }
 
-@media (max-width: 350px){
+
+@media (max-width: 320px){
+	.typing{
+		width: 75%;
+		font-size: 1.3em;
+	}
+	
+	.hamburger .line {
+		width: 40px;
+		height: 5px;
+		background-color: #ecf0f1;
+		display: block;
+		margin: 6px auto;
+	}
+	
+	.center-tit{
+		font-size: 1.3em;
+		left: 0;
+	}
+	
+	.sub-container{
+		height: 50vh;
+	}
+	
+	.sub-container .sub-wrapper {
+		font-family: 'Sawarabi Gothic', sans-serif;
+		font-size: 0.8em;
+	}
+	
+	.sub-container .main-wrap-top {
+		padding: 0em 2em 0;
+	}
+	
+	.sub-container .main-wrap-top h1.sub-tit {
+   		 font-size: 1.2em;
+	}
+	
+	.sub-container .main-wrap-top {
+		position: relative;
+		top: 8%;
+	}
+	
+	.main-wrap-top h1.main-wrap-tit {
+		font-size: 1.2em;
+		margin: 0em auto 0em;
+	}
+	
 	.sub-top-bg h1 {
-   		 left: 4%;
+		left: -8%;
+		width: 85%;
+		font-size: 1.2em;
+		text-align: center;
 	}
 	
-	.main-wrap-top p{
-		font-size: 1em;
+	.sub-container .otoi-wrapper .ran_wrap legend {
+		width: 29.5%;
+		text-align: center;
+		padding: 1em 0;
 	}
 	
-	.sub-container .info-bg {
-	    margin: 7em auto 4em;
+	.sub-container .otoi-wrapper {
+		font-family: 'Sawarabi Gothic', sans-serif;
+		width: 100%;
+	}
+	
+	
+	.sub-container .notice-wrapper table tbody tr td.tNaiyou {
+		line-height: 2;
+		text-align: left;
+		padding: 1em 1em;
+	}
+	
+	.sub-container .notice-wrapper table tbody tr td ol {
+		width: 90%;
+		margin: 2em auto;
+	}
+	
+		.sub-container .notice-wrapper .backBtn {
+		border: 1px solid;
+		width: 33%;
+		padding: 1em 2em;
+		text-align: center;
+		margin: 1em auto 3em;
+		border-radius: 6px;
+		cursor: pointer;
+		background: #333;
+		color: #fff;
+		position: relative;
+		bottom: 2em;
+	}
+	
+	footer.sub-footer{
+		padding-bottom: .3em;
+	}
+	
+	footer .footer-inner{
+		padding: 0;
+	}
+	
+	footer .footer-inner .footer-left-box img {
+		margin: 0em auto 0;
+		display: block;
 	}
 }
-
 
