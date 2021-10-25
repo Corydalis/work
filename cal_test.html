@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/new_cal.css">
+  <title>개인 카렌다</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      margin: 0;
+      position: relative;
+    }
+
+    #calendar {
+      height: 99%;
+    box-sizing: border-box;
+    padding: 0.5%;
+    width: 60%;
+    margin: 0 auto;
+    }
+
+    .calendar__day {
+      display: inline-block;
+      vertical-align: bottom;
+      width: calc(97% / 7);
+      height: calc(98% / 5);
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .cal-days div{
+      width: 14%;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin: 2rem auto; display: block;">10월</h1>
+    <!--<h1 class="next">다음</h1>-->
+    <div id="calendar">
+        <div class="calendar-days">
+            <div class="cal-days">
+              <div>
+
+              </div>
+            </div>
+    </div>
+    </div>
+  <script>
+    const today = new Date();
+    const setCalendarData = (year, month) => {
+      let calHtml = "";
+      const setDate = new Date(year, month - 1, 1);
+      const firstDay = setDate.getDate();
+      const firstDayName = setDate.getDay();
+      const lastDay = new Date(
+        today.getFullYear(),
+        today.getMonth() + 1,
+        0
+      ).getDate();
+      const prevLastDay = new Date(
+        today.getFullYear(),
+        today.getMonth(),
+        0
+      ).getDate();
+
+      let startDayCount = 1;
+      let lastDayCount = 1;
+
+
+      for (let i = 0; i < 6; i++) {
+        for (let j = 0; j < 7; j++) {
+          if (i == 0 && j < firstDayName) {
+            if (j == 0) {
+              
+              calHtml +=
+                `<div class='days before'><span>${(prevLastDay - (firstDayName - 1) + j)}</span><span></span></div>`;
+            } else if (j == 6) {
+              
+              calHtml +=
+                `<div class='days'><span>${(prevLastDay - (firstDayName - 1) + j)}</span><span></span></div>`;
+            } else {
+              
+              calHtml +=
+                `<div class='days before'><span>${(prevLastDay - (firstDayName - 1) + j)}</span><span></span></div>`;
+            }
+          }
+
+          else if (i == 0 && j <firstDay) {
+            if (j == 0) {
+              
+              calHtml +=
+                `<div  class='days'><span>${firstDay}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'>zzzzz</span></div>`;
+            } else if (j == 6) {
+              
+              calHtml +=
+                `<div  class='days'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            } else {
+              
+              calHtml +=
+                `<div  class='days horizontalGutter'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            }
+          }
+
+          else if (i == 0 && j == firstDayName) {
+            if (j == 0) {
+              
+              calHtml +=
+                `<div  class='days'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            } else if (j == 6) {
+              
+              calHtml +=
+                `<div  class='days'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            } else {
+              
+              calHtml +=
+                `<div  class='days horizontalGutter'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            }
+          }
+          else if (i == 0 && j > firstDayName) {
+            if (j == 0) {
+              
+              calHtml +=
+                `<div  class='days horizontalGutter'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            } else if (j == 6) {
+              
+              calHtml +=
+                `<div  class='days'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            } else {
+              
+              calHtml +=
+                `<div  class='days horizontalGutter'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            }
+          }
+          else if (i > 0 && startDayCount <= lastDay) {
+            if (j == 0) {
+              
+              calHtml +=
+                `<div class='days horizontalGutter verticalGutter'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            } else if (j == 6) {
+              
+              calHtml +=
+                `<div class='days verticalGutter'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            } else {
+              
+              calHtml +=
+                `<div class='days horizontalGutter verticalGutter'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+            }
+          }
+          else if (startDayCount > lastDay) {
+            if (j == 0) {
+              
+              calHtml +=
+                `<div  class='days horizontalGutter verticalGutter'><span>${lastDayCount++}</span><span></span></div>`;
+            } else if (j == 6) {
+              
+              calHtml +=
+                `<div  class='days verticalGutter'><span>${lastDayCount++}</span><span></span></div>`;
+            } else {
+              
+              calHtml +=
+                `<div  class='days horizontalGutter verticalGutter'><span>${lastDayCount++}</span><span></span></div>`;
+            }
+          }
+        }
+      }
+      document
+        .querySelector("#calendar")
+        .insertAdjacentHTML("beforeend", calHtml);
+    };
+
+    const setFixDayCount = number => {
+      let fixNum = "";
+      if (number < 10) {
+        fixNum = "0" + number;
+      } else {
+        fixNum = number;
+      }
+      return fixNum;
+    };
+
+    if (today.getMonth() + 1 < 10) {
+      setCalendarData(today.getFullYear(), "0" + (today.getMonth() + 1));
+    } else {
+      setCalendarData(today.getFullYear(), "" + (today.getMonth() + 1));
+    }
+
+
+    const isToday = (someDate) => {
+  return someDate.getDate() == today.getDate() &&
+    someDate.getMonth() == today.getMonth() &&
+    someDate.getFullYear() == today.getFullYear()
+}
+
+/*
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+if (date = today){
+     document.querySelector('.days').classList.toggle('today');
+} */
+
+;
+  </script>
+
+              
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<script>
+
+var d = new Date();
+var n = d.getDate();
+
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+
+n = n > 0 ? n + 1 : 6; // zero is sunday, not monday in javascript
+
+$('.days').eq(n+3).addClass('first');
+
+
+const dDay = document.querySelector('.first');
+const sleep = document.createElement("div");
+sleep.classList.add('sleep');
+const michin = document.createTextNode('오늘의 할일');
+sleep.append(michin);
+var currentDiv1 = document.getElementById("div11");
+
+dDay.insertBefore(sleep, currentDiv1);
+
+
+
+
+
+
+const week_wrap = document.querySelector('.cal-days');
+const weekArr = [`<div><h3>일</h3></div><div><h3>월</h3></div><div><h3>화</h3></div><div><h3>수</h3></div><div><h3>목</h3></div><div><h3>금</h3></div><div><h3>토</h3></div>`];
+const slice = weekArr.join('  ');
+const blank = [];
+
+
+// 이후
+weekArr.forEach(function(arr){
+  //document.body.append(arr);
+
+  const weeks = document.querySelector('.weeks');
+
+  const for_week = document.createElement("div");
+      for_week.classList.add('weeks');
+      for_week.append(arr);
+      week_wrap.innerHTML = slice;
+      weeks.appendChild(for_week);
+});
+
+
+
+
+/*
+document.body.onload = asdf;
+
+function asdf (){
+  let h1 = document.createElement("h1");
+  var newContent = document.createTextNode("환영합d다!");
+
+  h1.append(newContent);
+  var currentDiv = document.getElementById("div1");
+    document.body.insertBefore(h1, currentDiv);
+} */
+
+
+
+
+weekArr.forEach((test, index) => test);
+/*
+if(d = n){
+    $('.days').eq(n+4).addClass('first');
+}*/
+</script>
+
+<script>
+
+  const FirstDay = document.getElementById('20211001');
+  if(FirstDay!=null){
+    FirstDay.parentElement.style.background = "white"; 
+  }
+</script>
+
+
+<!-------------- jaryo data START ----------->
+<script>
+  const dataTest = document.getElementById('20211017');
+  const span = document.querySelectorAll('span');
+
+  if(dataTest!=null){
+    document.body.onload = asdf;
+
+      function asdf (){
+        let dip = document.createElement("div");
+        dip.classList.add('schedule');
+        var newContent = document.createTextNode("엄마랑 쇼핑");
+
+        dip.append(newContent);
+        var currentDiv = document.getElementById("div1");
+          dataTest.insertBefore(dip, currentDiv);
+      }
+  }
+
+
+
+  
+
+</script>
+</body>
+
+</html>
