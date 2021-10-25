@@ -1,0 +1,138 @@
+article.cal-article{
+    top: 11%;
+    position: absolute
+}
+
+.calendar-top h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2.3rem 0;
+    color: #fff;
+}
+
+.calendar-days .cal-week{
+    display: inline-flex;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.calendar-days .cal-week .week-box{
+    text-align: center;
+    padding: 1.3rem 1rem;
+} 
+
+.calendar-days .cal-days{
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid;
+    flex-wrap: wrap;
+}
+
+.calendar-days .cal-days .days{
+    width: 14.15%;
+    height: 15vh;
+    max-height: 150px;
+    background: #fff;
+    border: 1px solid #eee;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.days{
+    width: calc(98.87% / 7);
+    height: calc(98% / 5);
+    max-height: 150px;
+    background: #fff;
+    border: 1px solid #eee;
+    transition: all .3s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.days:last-child{
+    display: none;
+}
+
+.first{
+    color: rgb(224, 28, 110);
+    background: rgba(238, 148, 148, 0.3);
+}
+
+.calendar-days .cal-days .days h4{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.days:hover{
+    background: #eee;
+    transition: all .3s ease;
+}
+
+.calendar-days .cal-days .days.today{
+    border: 1px solid rgb(224, 28, 110);
+    color: rgb(224, 28, 110);
+}
+
+.today{
+    border: 1px solid rgb(67, 36, 206);
+    color: rgb(224, 28, 110);
+    background: rgba(238, 148, 148, 0.3);
+}
+
+.calendar-days .cal-days .days ul li{
+    color: #333;
+    margin: 0.4rem 0;
+    font-size: 0.8rem
+}
+
+.calendar-days .cal-days .days.today ul li{
+    color: #333;
+    margin: 0.4rem 0;
+    font-size: 0.9rem
+}
+
+.calendar-days .cal-days .days.holi{
+    color: #fff;
+    font-weight: bold;
+    background: rgba(226, 75, 75, 0.5);
+}
+
+.calendar-days .cal-days .days.holi ul li{
+    color: #fff;
+}
+
+.calendar-days .cal-days .days.moneyDay h2{
+    text-align: center;
+    color: yellow;
+    background: #3f576e
+}
+
+
+.schedule{
+    width: auto;
+    position: relative;
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1.1rem 1rem;
+}
+    
+.days span{
+    font-size: 1.1rem;
+    padding: 0.5rem 0 0.7rem 0.7rem;
+}
+
+.before{
+    background: rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.3);
+}
+
+.sleep{
+    margin: 1.2rem 0rem;
+    position: relative;
+    top: 0.5rem;
+}
